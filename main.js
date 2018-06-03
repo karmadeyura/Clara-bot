@@ -29,7 +29,7 @@ bot.on("ready" ,() => {
     console.log("Bot Ready !");
 });
 
-bot.login("Mzk1MTQ1MTQxMzI2ODM5ODE2.DSVCgA.5k8-fCMLhw6irA2kfAw2so3XlZ8");
+bot.login(process.env.TOKEN);
 
 bot.on("guildMemberAdd", member => {
     let role = member.guild.roles.find("name", "Admirateurs (Peut aider en cas de besoins)");
